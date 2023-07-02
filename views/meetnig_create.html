@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Bootstrap icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="/css/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+  <!-- JS -->
+  <script type="text/javascript" src="/js/meeting_create.js"></script> 
+  <script type="text/javascript" src="/js/index.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      box-sizing: border-box;
+      font-size: 30px;
+    }
+  
+    
+  </style>
+</head>
+<body>
+  <!-- Header-->
+  <header class="bg-dark py-5">
+      <div class="container px-4 px-lg-5 my-5">
+          <div class="text-center text-white">
+              <h1 class="display-4 fw-bolder">다모임</h1>
+              <p class="lead fw-normal text-white-50 mb-0">모임을 만들어보세요</p>
+          </div>
+      </div>
+  </header>
+
+  <div class="container" style=" box-shadow: 5px 5px 5px 5px gray; width: 1000px; height: 1100px; margin-top: 50px;">
+    <div class="contents">
+      <label for="inputName">제목: </label>
+      <input type="text" style="width: 60%; margin: 3%;" id="inputName">
+
+      <br>
+      <label for="inputImage" >대표 이미지: </label>
+      <input type="file" class="real-upload" accept="image/*" style="margin: 3%; " required multiple id="inputImage">
+
+      <br>
+      <label for="inputCnt">인원: </label>
+      <input type="number" style="width: 5%; margin: 3% 1% 3% 3%" id="inputCnt">명
+
+      <br>
+      <label for="inputStartDate">기간: </label>
+      <input type="date" style=" margin: 3% 1% 3% 3%" id="inputStartDate"> ~ <input type="date" style=" margin: 3% 1% 3% 3%" id="inputEndDate">
+
+      <br>
+      <label for="description">설명</label>
+      <br>
+      <textarea cols="50" rows="10" id="description"></textarea>
+
+      <div style="margin: 3%; padding: 3%; float: right;">
+        <button onclick="create_meeting()">확인</button>
+        <button onclick="location.href='/index.html'">취소</button>
+      </div>
+      
+      
+    </div>
+  </div>
+</body>
+</html>

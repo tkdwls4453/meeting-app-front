@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Homepage - Start Bootstrap Template</title>
+    
+        
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/main.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+        <!-- JS -->
+        <script type="text/javascript" src="/js/index.js"></script> 
+
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!">다모임</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">나의 모임</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">내 정보</a></li>
+                    </ul>
+                    
+                    <!-- 로그인-->
+                    <a href="/views/login.html" class="btn btn-outline-dark" id="login">
+                        Login
+                    </a>
+
+                    <a href="/#" class="btn btn-outline-dark" id="logout" onclick="logout()">
+                        Logout
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">다모임</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">원하는 모임에 가입해 보세요</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- 검색창 -->
+        <div class="field has-addons field_background" style="margin: 3%">
+            <div class="control" style="margin:auto;">
+                <input id = "input-local" class="input" style="width: 700px; height: 40px;" type="text" placeholder="지역을 입력하세요" onkeyup="if(window.event.keyCode==13){search_btn()}">
+                <buttun class="button is-info input-local" onclick="search_btn()" style="height: 40px; float:right; background-color: black;">검색</buttun>
+            </div>
+        </div>
+
+
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Meeting image-->
+                            <img class="card-img-top" src="/images/AA.26934838.1.jpg" alt="..." />
+                            <!-- Meeting details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Meeting name-->
+                                    <h5 class="fw-bolder">독서 모임</h5>
+                                    <!-- Meeting introduce-->
+                                    <p>안녕하세요 저희는 독서 모임입니다.</p>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <p style="text-align: right; padding-right: 10%;">7 / 10</p>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Meeting image-->
+                            <img class="card-img-top" src="/images/AA.26934838.1.jpg" alt="..." />
+                            <!-- Meeting details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Meeting name-->
+                                    <h5 class="fw-bolder">독서 모임</h5>
+                                    <!-- Meeting introduce-->
+                                    <p>안녕하세요 저희는 독서 모임입니다.</p>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <p style="text-align: right; padding-right: 10%;">7 / 10</p>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Meeting image-->
+                            <img class="card-img-top" src="/images/AA.26934838.1.jpg" alt="..." />
+                            <!-- Meeting details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Meeting name-->
+                                    <h5 class="fw-bolder">독서 모임</h5>
+                                    <!-- Meeting introduce-->
+                                    <p>안녕하세요 저희는 독서 모임입니다.</p>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <p style="text-align: right; padding-right: 10%;">7 / 10</p>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Meeting image-->
+                            <img class="card-img-top" src="/images/AA.26934838.1.jpg" alt="..." />
+                            <!-- Meeting details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Meeting name-->
+                                    <h5 class="fw-bolder">독서 모임</h5>
+                                    <!-- Meeting introduce-->
+                                    <p>안녕하세요 저희는 독서 모임입니다.</p>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <p style="text-align: right; padding-right: 10%;">7 / 10</p>
+                        </div>
+                        <a class="bi bi-plus-circle-fill" id="openFormBtn" style="float: right;  font-size: 70px; color: black" href="/views/meetnig_create.html"></a>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            
+        </section>
+        <!-- Footer-->
+        <!-- <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+        </footer> -->
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+    </body>
+</html>
